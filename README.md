@@ -86,9 +86,11 @@ cp -r aruskas /Applications/XAMPP/xamppfiles/htdocs/
 ### 3. **Setup Database**
 
 **Cara A: Menggunakan Setup Script (Termudah)** ⭐
-- Buka http://localhost/aruskas/setup.php
-- Klik tombol untuk setup otomatis
+- **PENTING: Pastikan MySQL sudah running di XAMPP Control Panel!**
+- Buka browser dan akses: `http://localhost/aruskas/setup.php`
 - Database akan dibuat secara otomatis
+- Ikuti petunjuk di layar
+- Login dengan username: `admin` password: `admin123`
 
 **Cara B: Menggunakan phpMyAdmin**
 - Buka http://localhost/phpmyadmin
@@ -102,11 +104,6 @@ cp -r aruskas /Applications/XAMPP/xamppfiles/htdocs/
 - Klik "Go"
 
 **Cara C: Menggunakan Command Line**
-```bash
-mysql -u root < /Applications/XAMPP/xamppfiles/htdocs/aruskas/database.sql
-```
-
-Jika tidak ada password:
 ```bash
 mysql -u root < /Applications/XAMPP/xamppfiles/htdocs/aruskas/database.sql
 ```
